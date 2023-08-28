@@ -1,0 +1,21 @@
+body {
+  /* width: 1000px; */
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+ul {
+  list-style: numeric;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="expenses.css" />
+    <title>Expenses App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Expense Tracker</h1>
+        <h2>Add A New Item</h2>
+      </header>
+      <section class="items">
+        <div class="name-container">
+          <label class="label-name" for="name">Name</label>
+          <input
+            type="text"
+            placeholder="Where was the expense made?"
+            id="name"
+          />
+        </div>
+        <div class="date-amout-div">
+          <label class="" for="date">Date</label>
+          <input
+            type="date"
+            placeholder="Where was the expense made?"
+            id="date"
+          />
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" />
+        </div>
+        <div class="expense-div">
+          <button class="add-expense">Add Expense</button>
+        </div>
+        <div>
+          <table id="table">
+            <tr>
+              <th id="table-name">Name</th>
+              <th class="table-date">Date</th>
+              <th class="table-amount">Amount</th>
+              <th class="delete"></th>
+            </tr>
+            <tr id="row">
+              <!-- <td class="namedata">x</td>
+              <td class="date-data">x</td>
+              <td class="amount-data"></td>
+              <td class="delete-data"></td> -->
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+    <script src="expenses.js"></script>
+  </body>
+</html>

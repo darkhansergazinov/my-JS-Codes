@@ -1,0 +1,8 @@
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container {
+  /* width: 500px; */
+  text-align: center;
+}
