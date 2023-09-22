@@ -10,28 +10,34 @@
     <head>
       <h1>Calculator</h1>
     </head>
-    <section class="calculator">
-      <div class="result"><p class="result-p"></p></div>
-      <div class="numbers">
-        <button class="button number-AC">AC</button>
-        <button class="button number-plus_Minus">+/-</button>
-        <button class="button number-percent">%</button>
-        <button class="button number-divide">÷</button>
-        <button class="button btn-num number-7" value="7">7</button>
-        <button class="button btn-num number-8" value="8">8</button>
-        <button class="button btn-num number-9" value="9">9</button>
-        <button class="button number-multiple">x</button>
-        <button class="button btn-num number-4" value="4">4</button>
-        <button class="button btn-num number-5" value="5">5</button>
-        <button class="button btn-num number-6" value="6">6</button>
-        <button class="button number-minus">-</button>
-        <button class="button btn-num number-1" value="1">1</button>
-        <button class="button btn-num number-2" value="2">2</button>
-        <button class="button btn-num number-3" value="3">3</button>
-        <button class="button number-plus">+</button>
-        <button class="button btn-num number-0" value="0">0</button>
-        <button class="button number-coma">,</button>
-        <button class="button number-equal">=</button>
+    <section>
+      <div class="calculator">
+        <div class="result"><p class="result-p">0</p></div>
+        <div class="calculator__keys">
+          <button class="button number-AC" data-action="clear">AC</button>
+          <button class="button number-plus_Minus" data-action="PlusMinus">
+            +/-
+          </button>
+          <button class="button number-percent" data-action="percent">%</button>
+          <button class="button number-divide" data-action="divide">÷</button>
+          <button class="button btn-num number-7" value="7">7</button>
+          <button class="button btn-num number-8" value="8">8</button>
+          <button class="button btn-num number-9" value="9">9</button>
+          <button class="button number-multiple" data-action="multiply">
+            x
+          </button>
+          <button class="button btn-num number-4" value="4">4</button>
+          <button class="button btn-num number-5" value="5">5</button>
+          <button class="button btn-num number-6" value="6">6</button>
+          <button class="button number-minus" data-action="subtract">-</button>
+          <button class="button btn-num number-1" value="1">1</button>
+          <button class="button btn-num number-2" value="2">2</button>
+          <button class="button btn-num number-3" value="3">3</button>
+          <button class="button number-plus" data-action="add">+</button>
+          <button class="button btn-num number-0" value="0">0</button>
+          <button class="button number-coma" data-action="decimal">,</button>
+          <button class="button number-equal" data-action="calculate">=</button>
+        </div>
       </div>
     </section>
     <script src="calculator.js"></script>

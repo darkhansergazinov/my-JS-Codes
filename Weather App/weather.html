@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="weather.css" />
+    <script defer src="weather.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-header">
+        <div class="search">
+          <input type="text" placeholder="Enter your city" class="search-bar" />
+        </div>
+        <button class="search-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+            width="24px"
+            height="24px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
+          </svg>
+        </button>
+      </div>
+      <main>
+        <div class="">
+          <img class="weather" src="img/clear.png" alt="clear" />
+        </div>
+        <div class="temp">24°C</div>
+        <div class="city-name">Krakow</div>
+      </main>
+      <aside>
+        <div class="aside-flex">
+          <img src="img/humidity.png" alt="humidity" class="aside-img" />
+          <p class="humidity">Humidity: 47%</p>
+        </div>
+        <div class="aside-flex">
+          <img src="img/wind.png" class="aside-img" alt="" />
+          <p class="wind">Wind: 10 km/h</p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>

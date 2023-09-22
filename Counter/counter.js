@@ -12,13 +12,16 @@ const counter = setInterval(() => {
   let hours = Math.floor(countDown / 1000 / 60 / 60) % 24;
   let days = Math.floor(countDown / 1000 / 60 / 60 / 24);
   h1.innerHTML =
-    days +
+    `${days}days` +
     ":" +
     `${hours}`.padStart(2, 0) +
+    "h" +
     ":" +
     `${minute}`.padStart(2, 0) +
+    "min" +
     ":" +
-    `${second}`.padStart(2, 0);
+    `${second}`.padStart(2, 0) +
+    "sec";
 }, 1000);
 
-console.log((600000 / 1000) % 60);
+// console.log((650000 % (1000 * 60 * 60)) / (1000 * 60));
