@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --bg-color: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  --dawn: linear-gradient(to right, #3b4371 0%, #f3904f 80%);
+  --afernoon: linear-gradient(120deg, #ede574, #1c9ce6, #2b32b2);
+  --dusk: linear-gradient(to right, #0b486b, #f56217);
+
+  --night: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
 
 html {
   font-family: "Roboto Mono", monospace;
@@ -13,12 +21,10 @@ html {
 
 body {
   /* height: auto; */
-  background: linear-gradient(
-    to right,
-    #0f2027,
-    #203a43,
-    #2c5364
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
+
+  background-image: var(--bg-color);
+  /* background: var(--dusk); */
   /* width: 1200px; */
 }
 
@@ -38,7 +44,7 @@ body {
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 
   color: white;
-  box-shadow: 0px 0px 24px white;
+  box-shadow: 0px 0px 24px #000000a1;
 }
 
 .search-header {
