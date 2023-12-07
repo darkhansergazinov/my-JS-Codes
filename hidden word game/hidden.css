@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #bca7fb; */
+  background-image: linear-gradient(
+    to right,
+    #f8afa6,
+    #f9bab3,
+    #fac5c0,
+    #fad1cc,
+    #fadcd9
+  );
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+
+  font-family: "Roboto Condensed", sans-serif;
+  color: #1f1105;
+}
+.hidden-word {
+  margin-bottom: 60px;
+}
+
+.word {
+  font-weight: 700;
+  /* color: red; */
+}
+
+.tries {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+#guess-input {
+  padding: 10px;
+  font-size: inherit;
+}
+
+.correct-guesses {
+}
+
+.correct-letters {
+  color: green;
+}
+.wrong-letters {
+  color: red;
+}
+
+.hidden-text {
+  display: none;
+}
+
+.hidden-winner {
+  background-color: #69db7c;
+}
+
+.hide {
+  display: none;
+}
+
+.submit {
+  background-color: #2f4858;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  font-family: inherit;
+
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit:active {
+  padding: 5px;
+  font-size: 17px;
+  background-color: #21323e;
+}
+
+.submit:hover {
+  background-color: #21323e;
+}

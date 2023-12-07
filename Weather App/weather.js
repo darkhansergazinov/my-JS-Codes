@@ -9,6 +9,7 @@ const weatherStatus = document.querySelector(".weather");
 const defaultCity = "Krakow";
 
 const starter = function () {
+  // 1. Set a default geolocation by requesting an user's permission.
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       function (position) {
@@ -110,8 +111,7 @@ const dataCheck = function (data) {
   }
 };
 /*
-1. Set a default geolocation by requesting an user's permission.  
-*/
+ */
 
 searchBtn.addEventListener("click", function (e) {
   const cityName = input.value;
@@ -153,3 +153,20 @@ const dayTime = function (hour) {
     body.style.background = "var(--night)";
   }
 };
+
+const getTimezone = function (time) {
+  // const date = time.timezone;
+  const date = 21600;
+  const currentTime = new Date();
+  let timeZoneOffset = currentTime.getTimezoneOffset();
+  let offsetHours = timeZoneOffset / 60;
+  // `${(date - UTC) / 60}min`;
+  // console.log(date.getTimezoneOffset());
+  let adjustedTime = new Date(
+    currentTime.getTime() + offsetHours * 3600 * 1000
+  );
+  console.log(adjustedTime);
+};
+getTimezone();
+
+// get timezone from a city and check it with UTC time
